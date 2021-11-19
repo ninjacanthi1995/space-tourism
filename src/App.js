@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/home-page/home-page";
+import DestinationPage from "./pages/destination-page/destination-page";
+import CrewPage from "./pages/crew-page/crew-page";
+import TechnologyPage from "./pages/technology-page/technology-page";
+const data = require("./assets/data.json")
 
 function App() {
+  const destinationRoutes = data.destinations.map((destination, index) => {
+      return <Route path={`/destination/${destination.name.toLowerCase()}`} element={<DestinationPage planetIdx={index} />} />
+  })
+  const crewRoutes = data.crew.map((crew, index) => {
+      const crewNameUrl = crew.name.toLowerCase().split(' ').join('-');
+      return <Route path={`/crew/${crewNameUrl}`} element={<CrewPage crewIdx={index} />} />
+  })
+  const technologyRoutes = data.technology.map((technology, index) => {
+      const technologyNameUrl = technology.name.toLowerCase().split(' ').join('-');
+      return <Route path={`/technology/${technologyNameUrl}`} element={<TechnologyPage technologyIdx={index} />} />
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {destinationRoutes}
+          {crewRoutes}
+          {technologyRoutes}
+        </Routes>
+      </div>
   );
 }
 

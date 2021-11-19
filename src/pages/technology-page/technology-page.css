@@ -1,0 +1,73 @@
+.technology-page-container {
+    background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 212px 0 100px 165px;
+    box-sizing: border-box;
+}
+
+.nav-texts-img-container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.technology-nav-texts-container {
+    display: flex;
+    padding-top: 137px;
+    padding-bottom: 113px;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.technology-nav-texts-container nav {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    gap: 32px;
+}
+
+.technology-nav-texts-container nav a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.technology-nav-texts-container nav a.active {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.technology-texts-container {
+    width: 470px;
+}
+
+.technology-texts-container p {
+    padding: 0;
+}
+
+.technology-texts-container .heading-3 {
+    margin-top: 11px;
+    margin-bottom: 17px;
+}
+
+.technology-img {
+    height: 100%;
+    width: auto;
+}
+
+

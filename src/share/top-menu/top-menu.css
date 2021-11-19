@@ -1,0 +1,52 @@
+.top-menu-container {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    left: 55px;
+    right: 0;
+    top: 40px;
+    height: 96px;
+    text-transform: uppercase;
+    font-family: Barlow Condensed;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+img {
+    width: 48px;
+    height: 48px;
+}
+
+.line-container {
+    width: 507px;
+}
+
+.line {
+    width: 473px;
+    height: 1px;
+    border: none;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    left: 140px;
+    position: absolute;
+    margin: 0;
+    z-index: 2;
+}
+
+.links-container {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.links-container a span {
+    font-weight: 700;
+    margin-right: 11px;
+}
