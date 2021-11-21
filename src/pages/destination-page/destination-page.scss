@@ -1,0 +1,218 @@
+.destination-page-container {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding: 14.7% 11.3% 8.2% 11.5%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    h5 {
+        margin-bottom: 5.7%;
+    }
+
+    .texts-img-container {
+        display: flex;
+        justify-content: space-between;
+
+        .planet-img {
+            width: 40%;
+        }
+
+        .destination-page-texts-container {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h2, p {
+                margin: 0;
+            }
+
+            h2 {
+                margin-bottom: 3.1%;
+            }
+
+            p {
+                margin-bottom: 12.1%;
+            }
+
+            hr {
+                background: #383B4B;
+                height: 1px;
+                width: 100%;
+                border: none;
+                margin-bottom: 6.3%;
+            }
+
+            .destinations-nav {
+                margin-bottom: 8.3%;
+
+                a {
+                    margin-right: 35px;
+                    padding: 0 0 15px 0;
+                }
+            }
+
+            .details-container {
+                display: flex;
+                gap: 79px;
+
+                .sub-heading-2 {
+                    margin-bottom: 8.4%;
+                }
+            }
+        }
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    /* CSS */
+    .destination-page-container {
+        background-image: url("../../assets/destination/background-destination-tablet.jpg");
+        padding: 17.7% 5.2% 7.8% 5.2%;
+        justify-content: space-between;
+        gap: 0;
+
+        h5 {
+            margin: 0;
+        }
+
+        .texts-img-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            gap: 20px;
+
+            .planet-img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .destination-page-texts-container {
+                align-items: center;
+                width: 573px;
+
+                p {
+                    text-align: center;
+                }
+
+                .details-container {
+                    gap: 79px;
+
+                    .sub-heading-2 {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 767px) {
+
+    /* CSS */
+    .destination-page-container {
+        background-image: url("../../assets/destination/background-destination-mobile.jpg");
+        padding: 23% 6% 15% 6%;
+        justify-content: space-between;
+        gap: 0;
+        height: auto;
+
+        h5 {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+        }
+
+        .texts-img-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 9%;
+            gap: 20px;
+
+            .planet-img {
+                width: 50%;
+                height: auto;
+            }
+
+            .destination-page-texts-container {
+                align-items: center;
+                width: 100%;
+
+                .destinations-nav {
+                    margin-bottom: 3%;
+                    display: flex;
+                    justify-content: center;
+                    gap: 11%;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 2.3625px;
+                        padding: 0 0 6% 0;
+                        margin: 0;
+                    }
+                }
+
+                h2 {
+                    font-size: 56px;
+                    line-height: 64px;
+                    margin: 0;
+                }
+
+                p {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-bottom: 9%;
+                }
+
+                hr {
+                    margin: 0 0 9% 0;
+                    border-bottom: 1px solid #383B4B;
+                }
+
+                .details-container {
+                    gap: 0;
+                    flex-direction: column;
+
+                    .detail-container {
+                        margin-bottom: 22%;
+
+                        .sub-heading-2 {
+                            margin-bottom: 12px;
+                            text-align: center;
+                        }
+
+                        .sub-heading-1 {
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

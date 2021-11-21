@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.heading-1 {
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 172px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+}
+
 .heading-2 {
   font-family: Bellefair;
   font-style: normal;
@@ -19,6 +34,14 @@
   line-height: 19px;
   letter-spacing: 2.7px;
   text-transform: uppercase;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.nav-text:hover {
+  border-bottom: 3px gray solid;
 }
 
 .nav-text.active {
@@ -69,13 +92,13 @@
   color: #D0D6F9;
   text-transform: uppercase;
   margin: 0;
-}
 
-.heading-5 span {
-  font-weight: 700;
-  margin-right: 28px;
-  mix-blend-mode: normal;
-  opacity: 0.25;
+  span {
+    font-weight: 700;
+    margin-right: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
 }
 
 .sub-heading-1 {
@@ -113,5 +136,93 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #D0D6F9;
+  /* or 178% */
+
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    /* CSS */
+    .nav-text {
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      letter-spacing: 2.3625px;
+    }
+
+    .heading-5 {
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 3.375px;
+    }
+
+  .heading-1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .body-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 767px) {
+
+    /* CSS */
+  .heading-1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+    .heading-5 {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+
+      span {
+        margin-right: 16px;
+      }
+    }
+
+    .heading-4 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .heading-3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .body-text {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    .nav-text {
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      letter-spacing: 2.3625px;
+    }
 }

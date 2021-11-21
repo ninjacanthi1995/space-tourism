@@ -1,0 +1,250 @@
+.technology-page-container {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 212px 0 100px 165px;
+    box-sizing: border-box;
+
+    .nav-texts-img-container {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .technology-nav-texts-container {
+            display: flex;
+            padding-top: 137px;
+            padding-bottom: 113px;
+            gap: 80px;
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                width: 80px;
+                gap: 32px;
+
+                a {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    border: 1px solid gray;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 1;
+                }
+
+                a:hover {
+                    border: 1px solid white;
+                }
+
+                a.active {
+                    background-color: #FFFFFF;
+                    color: black;
+                }
+            }
+
+            .technology-texts-container {
+                width: 470px;
+
+                p {
+                    padding: 0;
+                }
+
+                .nav-text:hover {
+                    border: none;
+                }
+
+                .heading-3 {
+                    margin-top: 11px;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+
+        .img-portrait {
+            height: 100%;
+            width: auto;
+        }
+
+        .img-landscape {
+            display: none;
+        }
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    /* CSS */
+    .technology-page-container {
+        background-image: url("../../assets/technology/background-technology-tablet.jpg");
+        padding: 136px 0 97px 0;
+        height: auto;
+        justify-content: center;
+
+        h5 {
+            padding-left: 40px;
+            font-size: 20px;
+        }
+
+        .nav-texts-img-container {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 60px;
+
+            .technology-nav-texts-container {
+                flex-direction: column;
+                padding: 56px 0 0 0;
+                align-items: center;
+                gap: 0;
+
+                nav {
+                    flex-direction: row;
+                    gap: 16px;
+                    width: auto;
+                    padding-bottom: 44px;
+
+                    a {
+                        width: 0;
+                        height: 0;
+                        padding: 30px;
+                    }
+                }
+
+                .technology-texts-container {
+                    width: 470px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                       font-size: 40px;
+                       margin: 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+                    }
+
+                    .nav-text:hover {
+                        border: none;
+                    }
+
+                    .heading-3 {
+                        margin-top: 11px;
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+
+            .img-portrait {
+                display: none;
+            }
+
+            .img-landscape {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 768px) {
+
+    /* CSS */
+    .technology-page-container {
+        background-image: url("../../assets/technology/background-technology-mobile.jpg");
+        padding: 23% 0 21% 0;
+        align-items: center;
+        height: auto;
+        justify-content: space-around;
+
+        h5 {
+            margin-bottom: 8%;
+        }
+
+        .nav-texts-img-container {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+
+            .technology-nav-texts-container {
+                flex-direction: column;
+                padding: 0;
+                align-items: center;
+                gap: 0;
+                width: 100%;
+
+                nav {
+                    flex-direction: row;
+                    gap: 16px;
+                    width: auto;
+                    padding-bottom: 7%;
+
+                    a {
+                        width: 0;
+                        height: 0;
+                        padding: 19px;
+                    }
+                }
+
+                .technology-texts-container {
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .nav-text {
+                        padding: 0;
+                        margin-bottom: 9px;
+                    }
+
+                    .heading-3 {
+                        margin: 0 0 3% 0;
+                    }
+
+                    .body-text {
+                        margin: 0;
+                        width: 87%;
+                    }
+                }
+            }
+
+            .img-portrait {
+                display: none;
+            }
+
+            .img-landscape {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin-bottom: 9%;
+            }
+        }
+    }
+
+}

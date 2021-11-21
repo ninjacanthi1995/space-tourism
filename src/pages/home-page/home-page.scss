@@ -1,0 +1,135 @@
+.home-page-container {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26% 11% 9% 11%;
+    box-sizing: border-box;
+
+    .texts-container {
+        width: 40%;
+
+        h5 {
+            margin-bottom: 5%;
+        }
+
+        h1 {
+            margin: 0 0 5% 0;
+        }
+
+        p {
+            color: #D0D6F9;
+        }
+    }
+
+    .button-link {
+        text-decoration: none;
+        width: 24%;
+        aspect-ratio: 1 / 1;
+
+        .heading-4 {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            border: none;
+            color: black;
+            cursor: pointer;
+            background-color: white;
+            opacity: 1;
+            box-sizing: content-box;
+        }
+
+        .heading-4:hover {
+            box-shadow: 0px 0px 0px 88px rgba(255,255,255,0.1);
+        }
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    /* CSS */
+    .home-page-container {
+        background-image: url("../../assets/home/background-home-tablet.jpg");
+        flex-direction: column;
+        padding: 26.3% 20.7% 11.7% 20.7%;
+        height: auto;
+
+        .texts-container {
+            width: 100%;
+            text-align: center;
+
+            h5 {
+                margin-bottom: 5.3%;
+            }
+
+            h1 {
+                margin-bottom: 5.3%;
+            }
+        }
+
+        .button-link {
+            width: 53.8%;
+
+            .heading-4:hover {
+                box-shadow: 0px 0px 0px 60px rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 767px) {
+
+    /* CSS */
+    .home-page-container {
+        background-image: url("../../assets/home/background-home-mobile.jpg");
+        padding: 29% 7% 12% 7%;
+        flex-direction: column;
+
+        .texts-container {
+            text-align: center;
+            width: 100%;
+
+            h5 {
+                margin-bottom: 5%;
+            }
+
+            h1 {
+                margin-bottom: 5%;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .button-link {
+            width: 46.5%;
+
+            .heading-4 {
+                padding: 0;
+            }
+
+            .heading-4:hover {
+                box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+}

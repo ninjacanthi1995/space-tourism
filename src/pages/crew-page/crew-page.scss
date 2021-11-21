@@ -1,0 +1,203 @@
+.crew-page-container {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100vh;
+    color: white;
+    display: flex;
+    padding: 212px 140px 0 165px;
+    justify-content: space-between;
+
+    .texts-nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-bottom: 80px;
+
+        h5 {
+            padding-bottom: 130px;
+        }
+
+        .crew-img {
+            display: none;
+        }
+
+        hr {
+            display: none;
+        }
+
+        h4 {
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            padding-bottom: 27px;
+        }
+
+        p {
+            height: 128px;
+        }
+
+        .crews-nav {
+            display: flex;
+            gap: 24px;
+
+            a {
+                padding: 7.5px;
+                border-radius: 50%;
+                background-color: white;
+                mix-blend-mode: normal;
+                opacity: 0.17;
+            }
+
+            a:hover {
+                mix-blend-mode: unset;
+                opacity: 0.5;
+            }
+
+            a.active {
+                mix-blend-mode: unset;
+                opacity: 1;
+            }
+        }
+    }
+
+    .crew-img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 481px to 768px
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* CSS */
+    .crew-page-container {
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 136px 40px 0 40px;
+        align-items: center;
+
+        .texts-nav-container {
+            align-items: center;
+            width: 100%;
+            padding: 0;
+
+            h5 {
+                align-self: flex-start;
+                padding-bottom: 60px;
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 24px;
+                padding-bottom: 8px;
+            }
+
+            h3 {
+                font-size: 40px;
+                padding-bottom: 16px;
+            }
+
+            p {
+                height: 84px;
+                width: 458px;
+                font-size: 16px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .crews-nav {
+                padding-top: 50px;
+            }
+        }
+
+        .crew-img {
+            height: 500px;
+        }
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+
+    /* CSS */
+    .crew-page-container {
+        background-image: url("../../assets/crew/background-crew-mobile.jpg");
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 23% 6% 15% 6%;
+        align-items: center;
+        height: auto;
+
+        .texts-nav-container {
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            h5 {
+                padding-bottom: 9%;
+                order: 1;
+            }
+
+            .crew-img {
+                order: 2;
+                display: block;
+                height: 223px;
+                width: auto;
+            }
+
+            hr {
+                display: block;
+                width: 100%;
+                margin: 0 0 9% 0;
+                border-bottom: 1px solid #383B4B;
+                order: 3;
+            }
+
+            h4 {
+                padding-bottom: 8px;
+                order: 5;
+            }
+
+            h3 {
+                padding-bottom: 16px;
+                order: 6;
+            }
+
+            p {
+                order: 7;
+                height: auto;
+                margin: 0;
+            }
+
+            .crews-nav {
+                order: 4;
+                padding: 0 0 9% 0;
+                gap: 16px;
+
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .crew-img {
+            display: none;
+        }
+    }
+
+}

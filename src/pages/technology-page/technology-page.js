@@ -1,4 +1,4 @@
-import './technology-page.css'
+import './technology-page.scss'
 import TopMenu from "../../share/top-menu/top-menu";
 import {Link} from "react-router-dom";
 const data = require("../../assets/data.json")
@@ -34,7 +34,8 @@ function TechnologyPage(props) {
                     </div>
                 </div>
 
-                <img className="technology-img" src={`../../assets/technology/image-${currentTechnologyNameUrl}-portrait.jpg`} />
+                <img className="img-portrait" src={`../../assets/technology/image-${currentTechnologyNameUrl}-portrait.jpg`} />
+                <img className="img-landscape" src={`../../assets/technology/image-${currentTechnologyNameUrl}-landscape.jpg`} />
 
             </div>
 

@@ -1,0 +1,146 @@
+.top-menu-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 3%;
+    right: 0;
+    top: 4%;
+    height: 96px;
+    text-transform: uppercase;
+
+    img {
+        width: 3.4%;
+        aspect-ratio: 1;
+    }
+
+    hr {
+        width: 33.8%;
+        height: 1px;
+        border: none;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        right: 57.2%;
+        position: absolute;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .links-container {
+        width: 59.4%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+
+        #close-button {
+            display: none;
+        }
+
+        a {
+            span {
+                margin-right: 11px;
+            }
+        }
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    /* CSS */
+    .top-menu-container {
+        left: 5.1%;
+        top: 0;
+
+        img {
+            width: 6.6%;
+        }
+
+        hr {
+            display: none;
+        }
+
+        .links-container {
+            width: 75%;
+            justify-content: space-around;
+            gap: 7%;
+            padding: 0 6.6% 0 6.6%;
+            background-color: #151923;
+
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* CSS */
+    .top-menu-container {
+        left: 7%;
+        top: 0;
+        padding: 0;
+
+        #logo {
+            width: 12%;
+            height: auto;
+        }
+
+        hr {
+            display: none;
+        }
+
+        .links-container {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            width: 70%;
+            padding: 9% 0 0 9%;
+            gap: 1.5rem;
+            justify-content: flex-start;
+            z-index: 2;
+
+            #close-button {
+                display: block;
+                width: 10%;
+                height: auto;
+                align-self: flex-end;
+                margin-right: 24px;
+            }
+
+            a {
+                padding: 6px;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+            }
+
+            a.active {
+                border: none;
+                border-right: 4px solid white;
+            }
+        }
+
+        #menu-button {
+            display: block;
+            width: 8%;
+            height: auto;
+            margin-right: 24px;
+        }
+    }
+
+}
+

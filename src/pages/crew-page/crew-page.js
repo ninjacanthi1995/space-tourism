@@ -1,4 +1,4 @@
-import './crew-page.css'
+import './crew-page.scss'
 import TopMenu from "../../share/top-menu/top-menu";
 import {Link} from "react-router-dom";
 const data = require("../../assets/data.json")
@@ -17,23 +17,27 @@ function CrewPage(props) {
 
             <TopMenu activeIdx={2}/>
 
-            <h5 className="heading-5"><span>02</span>Meet your crew</h5>
+            <div className="texts-nav-container">
 
-            <h4 className="heading-4">{currentCrew.role}</h4>
+                <h5 className="heading-5"><span>02</span>Meet your crew</h5>
 
-            <h3 className="heading-3">{currentCrew.name}</h3>
+                <img className="crew-img" src={`../../assets/crew/image-${currentCrewNameUrl}.png`} />
 
-            <div className="crew-page-texts-container">
+                <hr/>
+
+                <h4 className="heading-4">{currentCrew.role}</h4>
+
+                <h3 className="heading-3">{currentCrew.name}</h3>
 
                 <p className="body-text">{currentCrew.bio}</p>
+
+                <nav className="crews-nav">
+                    {links}
+                </nav>
 
             </div>
 
             <img className="crew-img" src={`../../assets/crew/image-${currentCrewNameUrl}.png`} />
-
-            <nav className="crews-nav">
-                {links}
-            </nav>
 
         </div>
     );
