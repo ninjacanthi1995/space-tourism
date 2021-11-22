@@ -7,17 +7,17 @@
     height: 100vh;
     color: white;
     display: flex;
-    padding: 212px 140px 0 165px;
+    padding: 14.7% 9.7% 0 11.5%;
     justify-content: space-between;
 
     .texts-nav-container {
         display: flex;
         flex-direction: column;
         width: 50%;
-        padding-bottom: 80px;
+        padding-bottom: 8.3%;
 
         h5 {
-            padding-bottom: 130px;
+            padding-bottom: 27%;
         }
 
         .crew-img {
@@ -29,15 +29,16 @@
         }
 
         h4 {
-            padding-bottom: 15px;
+            padding-bottom: 2.6%;
         }
 
         h3 {
-            padding-bottom: 27px;
+            padding-bottom: 4.7%;
         }
 
         p {
-            height: 128px;
+            width: 78.2%;
+            margin-bottom: 21%;
         }
 
         .crews-nav {
@@ -75,52 +76,45 @@
   ##Screen = B/w 481px to 768px
 */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
 
     /* CSS */
     .crew-page-container {
         background-image: url("../../assets/crew/background-crew-tablet.jpg");
         flex-direction: column;
         justify-content: space-between;
-        padding: 136px 40px 0 40px;
+        padding: 17.7% 5.2% 0 5.2%;
         align-items: center;
+        height: auto;
 
         .texts-nav-container {
             align-items: center;
             width: 100%;
             padding: 0;
+            margin-bottom: 5.8%;
 
             h5 {
                 align-self: flex-start;
-                padding-bottom: 60px;
-                font-size: 20px;
+                padding-bottom: 8.7%;
             }
 
             h4 {
-                font-size: 24px;
                 padding-bottom: 8px;
             }
 
             h3 {
-                font-size: 40px;
-                padding-bottom: 16px;
+                padding-bottom: 2.3%;
             }
 
             p {
-                height: 84px;
-                width: 458px;
-                font-size: 16px;
-                margin: 0;
+                width: 66.5%;
                 text-align: center;
-            }
-
-            .crews-nav {
-                padding-top: 50px;
+                margin-bottom: 5.8%;
             }
         }
 
         .crew-img {
-            height: 500px;
+            height: 51.9vh;
         }
     }
 
@@ -131,7 +125,7 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
     /* CSS */
     .crew-page-container {
@@ -156,8 +150,7 @@
             .crew-img {
                 order: 2;
                 display: block;
-                height: 223px;
-                width: auto;
+                height: 33.4vh;
             }
 
             hr {

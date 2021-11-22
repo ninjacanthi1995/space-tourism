@@ -8,29 +8,27 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 212px 0 100px 165px;
-    box-sizing: border-box;
+    padding: 23.5vh 0 11.2vh 11.5vw;
 
     .nav-texts-img-container {
         display: flex;
         justify-content: space-between;
-        box-sizing: border-box;
 
         .technology-nav-texts-container {
             display: flex;
-            padding-top: 137px;
-            padding-bottom: 113px;
-            gap: 80px;
+            padding-top: 15.2vh;
+            padding-bottom: 12.5vh;
+            gap: 5.5vw;
 
             nav {
                 display: flex;
                 flex-direction: column;
-                width: 80px;
-                gap: 32px;
+                width: 5.5vw;
+                gap: 3.5vh;
 
                 a {
-                    width: 80px;
-                    height: 80px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: 50%;
                     text-align: center;
                     text-decoration: none;
@@ -54,10 +52,10 @@
             }
 
             .technology-texts-container {
-                width: 470px;
 
                 p {
                     padding: 0;
+                    width: 30.8vw;
                 }
 
                 .nav-text:hover {
@@ -65,15 +63,14 @@
                 }
 
                 .heading-3 {
-                    margin-top: 11px;
-                    margin-bottom: 17px;
+                    margin-top: 1.2vh;
+                    margin-bottom: 1.8vh;
                 }
             }
         }
 
         .img-portrait {
             height: 100%;
-            width: auto;
         }
 
         .img-landscape {
@@ -87,52 +84,50 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
 
     /* CSS */
     .technology-page-container {
         background-image: url("../../assets/technology/background-technology-tablet.jpg");
-        padding: 136px 0 97px 0;
+        padding: 13.2vh 0 9.4vh 0;
         height: auto;
         justify-content: center;
 
         h5 {
-            padding-left: 40px;
-            font-size: 20px;
+            padding-left: 5.2vw;
+            align-self: flex-start;
         }
 
         .nav-texts-img-container {
             display: flex;
             flex-direction: column-reverse;
-            padding-top: 60px;
+            padding-top: 5.8vh;
 
             .technology-nav-texts-container {
                 flex-direction: column;
-                padding: 56px 0 0 0;
+                padding: 5.4vh 0 0 0;
                 align-items: center;
                 gap: 0;
 
                 nav {
                     flex-direction: row;
-                    gap: 16px;
+                    gap: 2vw;
                     width: auto;
-                    padding-bottom: 44px;
+                    padding-bottom: 4.2vh;
 
                     a {
                         width: 0;
                         height: 0;
-                        padding: 30px;
+                        padding: 3.9vw;
                     }
                 }
 
                 .technology-texts-container {
-                    width: 470px;
                     align-items: center;
                     display: flex;
                     flex-direction: column;
 
                     h3 {
-                       font-size: 40px;
                        margin: 0;
                     }
 
@@ -141,6 +136,7 @@
                         padding: 0;
                         margin: 0;
                         text-align: center;
+                        width: 59.6vw;
                     }
 
                     .nav-text:hover {
@@ -148,8 +144,8 @@
                     }
 
                     .heading-3 {
-                        margin-top: 11px;
-                        margin-bottom: 17px;
+                        margin-top: 1vh;
+                        margin-bottom: 1.6vh;
                     }
                 }
             }
@@ -161,7 +157,6 @@
             .img-landscape {
                 display: block;
                 width: 100%;
-                height: auto;
             }
         }
     }
@@ -173,7 +168,7 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* CSS */
     .technology-page-container {
@@ -201,14 +196,14 @@
 
                 nav {
                     flex-direction: row;
-                    gap: 16px;
+                    gap: 4.2vw;
                     width: auto;
                     padding-bottom: 7%;
 
                     a {
                         width: 0;
                         height: 0;
-                        padding: 19px;
+                        padding: 5vw;
                     }
                 }
 
@@ -220,7 +215,8 @@
 
                     .nav-text {
                         padding: 0;
-                        margin-bottom: 9px;
+                        margin-bottom: 1.4vh;
+                        width: auto;
                     }
 
                     .heading-3 {
@@ -241,7 +237,6 @@
             .img-landscape {
                 display: block;
                 width: 100%;
-                height: auto;
                 margin-bottom: 9%;
             }
         }
